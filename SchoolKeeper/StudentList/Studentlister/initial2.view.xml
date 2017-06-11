@@ -1,0 +1,16 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="studentlister.initial2" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+		<Table xmlns="sap.m"
+	id="table1"
+	visible="true"
+	headerText="Student list neeche hai"
+	headerDesign="Standard"
+	footerText="Yeh footer text hai"
+	noDataText="No student found"
+	growing="true">
+</Table>
+		</content>
+	</Page>
+</core:View>

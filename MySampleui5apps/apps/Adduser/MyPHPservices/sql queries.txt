@@ -1,0 +1,12 @@
+create table 'mohit'.'contact' ( 'contactid' INT(10) PRIMARY KEY,
+                                'serial' int(2) primary key, 
+                                'type' VARCHAR(10),
+                                'contactno' VARCHAR(20) );
+								
+								
+								
+								
+ALTER TABLE mohit.user ADD CONSTRAINT add FOREIGN KEY address (addressid) REFERENCES mohit.address (addressid) ON DELETE restrict ON UPDATE restrict;
+ALTER TABLE mohit.user ADD CONSTRAINT con FOREIGN KEY contact (contactid) REFERENCES mohit.contact (contactid) ON DELETE restrict ON UPDATE restrict;
+ALTER TABLE mohit.user ADD CONSTRAINT gen FOREIGN KEY gender (gender) REFERENCES mohit.gender (gender) ON DELETE restrict ON UPDATE restrict;
+ALTER TABLE mohit.user ADD CONSTRAINT uniq FOREIGN KEY uniqid (uniqid) REFERENCES mohit.uniqid_tab (uniqid) ON DELETE restrict ON UPDATE restrict;

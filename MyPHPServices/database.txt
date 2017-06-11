@@ -1,0 +1,3 @@
+Now our development environment is ready. We will create a simple database with a few tables. Later on we will create simple JSON services to create/read/update and delete data in these tables.
+
+We will create a database named 'UI5DB' and tables 'USER','CONTACT'.

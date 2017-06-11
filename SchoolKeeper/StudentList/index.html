@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="/resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		<style>
+							.master{
+			background-color : rgba(0,80,255,0.2);
+			padding-top: 5px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+			padding-left: 5px;
+			};
+			
+		</style>
+		<script>
+				sap.ui.localResources("studentlister");
+				var app = new sap.m.SplitApp("app");
+				var page1 = sap.ui.view({id:"idinitial1", viewName:"studentlister.initial", type:sap.ui.core.mvc.ViewType.XML});
+				var page2 = sap.ui.view({id:"idinitial2", viewName:"studentlister.initial2", type:sap.ui.core.mvc.ViewType.XML});
+				app.addMasterPage(page1);
+				app.addDetailPage(page2);
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

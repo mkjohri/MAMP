@@ -1,0 +1,17 @@
+SAP is the largest enterprise software provider in world. SAP ECC is its most successful product used by Some of the world`s largest organizations. Most of the ECC applications are written in ABAP and generally run on SAP GUI. SAP has tried few other UI technologies such as webdynpro for its web-applications but had limited success.
+
+SAP Fiori is SAP`s latest UI stretagy for its future applications. It is based on SAPUI5.
+
+For a front-end developer who is already working with technologies such as HTML, CSS, Javascript and XML etc, it`s just another Javascript library.
+
+What it means to us (Abapers)?
+There are striking differences between ABAP and SAPUI5 development. Abapers are generally very much habitual of using inbuilt capabilities of SAP GUI and ABAP AS(application server). Such as ALV`s, versioning, debugger, no separate handling of source code file  etc. But that is not the case with SAPUI5 development. Here you have to take care of various files generated in course of development. Unlike ABAP editor there are many proprietary and SAP provided tools, available for SAPUI5 development. It can be started even with a text editor.
+
+Conceptually SAPUI5 development follows MVC paradigm. Where as classical ABAP doesn`t necessarily follows it.
+
+Due to these dissimilarities it becomes slightly difficult to come out of the inertia that Abapers generally have.This is my attempt to help beginners to get started with SAPUI5 Development, right from setting up basic development environment to creating working applications.
+
+We will discuss the basic system architecture of SAPUI5 applications and installation required for setting up the development environment.
+
+About the writer:
+I am an Abaper. I have been in this field for 6+ years and likes to explore latest SAP technologies.

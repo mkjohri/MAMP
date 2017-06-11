@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="student.initial" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+<FileUploader xmlns="sap.ui.unified"
+	id="name"
+	uploadUrl="upload.php"
+	buttonText="browse"
+	fileType="png"
+	multiple="false"
+	maximumFileSize=""
+	mimeType="image"
+	sendXHR="false"
+	placeholder=""
+	style="">
+		
+</FileUploader>
+<Button xmlns="sap.m" id="btn" text="Press" press="onUpload">
+
+</Button>
+		</content>
+	</Page>
+</core:View>

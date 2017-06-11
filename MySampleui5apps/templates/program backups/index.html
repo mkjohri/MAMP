@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+
+<script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"  id="sap-ui-bootstrap"
+	data-sap-ui-libs="sap.m" data-sap-ui-theme="sap_bluecrystal">
+	
+</script>
+
+<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+<style>
+div{
+<!--// width : 360px; ---> 
+}
+.vbox {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.label{
+	padding-top: 12px;
+	font-weight: bold;
+}
+
+</style>
+<script>
+sap.ui.localResources("user_detail");
+	var userid = new sap.m.Text("userid");
+		var addressid = new sap.m.Text("addressid");
+			var contactid = new sap.m.Text("contactid");
+						var uniqid = new sap.m.Text("uniqid");
+var app = new sap.m.App({
+initialPage : "view1"         
+});		
+	var page = sap.ui.view({
+		id : "view1",
+		viewName : "user_detail.view1",
+		type : sap.ui.core.mvc.ViewType.JS
+	});
+		var page2 = sap.ui.view({
+		id : "view2",
+		viewName : "user_detail.view2",
+		type : sap.ui.core.mvc.ViewType.JS
+	});
+	
+
+	app.addPage(page).addPage(page2);
+	app.placeAt("content");
+
+</script>
+
+</head>
+<body class="sapUiBody" role="application">
+
+	<div id="content" ></div>
+
+</body>
+</html>

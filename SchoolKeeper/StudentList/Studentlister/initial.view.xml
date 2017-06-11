@@ -1,0 +1,27 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="studentlister.initial" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Search Student">
+		<content>
+			<VBox xmlns="sap.m" id="vbox1" class="master">
+				<Input xmlns="sap.m" id="studentid" visible="true" fieldGroupIds=""
+					value="" width="60%" placeholder="Search by id">
+				</Input>
+				<Input xmlns="sap.m" id="name1" visible="true" fieldGroupIds=""
+					value="" width="60%" placeholder="Search by name">
+				</Input>
+				<Input xmlns="sap.m" id="name2" visible="true" fieldGroupIds=""
+					value="" width="60%" placeholder="Search by sirname">
+				</Input>
+				<DatePicker xmlns="sap.m" id="dob" width="" placeholder="dd-MM-YYYY"
+					displayFormat="dd-MM-YYYY" valueFormat="" dateValue=""
+					displayFormatType="" minDate="" maxDate="">
+				</DatePicker>
+				<Button xmlns="sap.m" id="serchBtn" class="specialButton" text="Search" type="Default"
+					width="" icon="sap-icon://search" tap="onSearch" press="onSearch">
+				</Button>
+				<Input xmlns="sap.m" id="abc" width="40%" placeholder="enter your name here">
+				</Input>
+			</VBox>
+		</content>
+	</Page>
+</core:View>
